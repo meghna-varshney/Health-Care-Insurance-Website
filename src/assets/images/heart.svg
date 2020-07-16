@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="30px" viewBox="0 0 35 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>valentines-heart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-log-out-screen-Copy" transform="translate(-293.000000, -228.000000)" fill-rule="nonzero">
+            <g id="Saved-5000" transform="translate(20.000000, 101.000000)">
+                <g id="OPD" transform="translate(14.000000, 129.000000)">
+                    <g id="valentines-heart" transform="translate(261.000000, 0.000000)">
+                        <path d="M15.4999065,2.20763452 C17.2539979,0.201948804 19.8348843,-1 22.6284353,-1 C27.7971084,-1 32,3.06916161 32,8.10526316 C32,10.7743193 30.8059716,13.2535155 28.821977,14.9261429 L16.9594296,26.412086 C16.5694673,26.7896521 16.0449502,27 15.4999056,27 C14.9548611,27 14.430344,26.7896521 14.0403664,26.4120713 L2.22818943,14.9716909 C0.193929177,13.2535296 -1,10.7743439 -1,8.10526316 C-1,3.06900493 3.20198802,-1 8.37049515,-1 C11.1641572,-1 13.7457952,0.202084938 15.4999065,2.20763452 Z" id="Path" stroke="#7564AB" stroke-width="2"></path>
+                        <path d="M2.87344511,15.2077242 L14.7359773,26.6936525 C14.9385674,26.8898026 15.2133224,27 15.4999056,27 C15.7864889,27 16.0612438,26.8898026 16.2638339,26.6936525 L28.1263661,15.2077242 C29.8844331,13.7228923 1.11544105,13.7228923 2.87344511,15.2077242 Z" id="Path-Copy" fill="#7564AB"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

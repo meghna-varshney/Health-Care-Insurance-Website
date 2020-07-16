@@ -1,0 +1,158 @@
+<div class="fullcontainer pt80">
+  <div class="rowcontainer">
+    <div class="fixedcontainer noSpaceLR">
+      <div class="c_container_outer">
+        <!--  <a href="#" class="backBtnbox">Back</a> -->
+        <div class="c_container_inner">
+          <div class="c_centrt_grid">
+            <div class="ref-d-b">
+              <h1>Refer your Friend</h1>
+              <div class="s_c_outer">
+                <div class="r-t-img1">
+                  <img src="assets/images/refer-img1.svg" alt="" width="400" />
+                </div>
+                <div class="r-f-code">
+                  <div class="r-f-text">
+                    <span
+                      class="cupon-code-text"
+                      id="copyTxt"
+                      onclick="copyToClipboard('#copyTxt')"
+                      >ABCD1234</span
+                    >
+                    <p>Tap to Copy</p>
+                  </div>
+                </div>
+                <div class="r-f-e-ca">
+                  <h3>Refer your Friends, Earn Cash Fast</h3>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomised words which don't
+                    look even slightly believable.
+                  </p>
+                </div>
+
+                <div class="invite-info-box clearfix">
+                  <div class="share-component">
+                    <span class="share-toggle">INVITE</span>
+                    <ul class="share-list">
+                      <li>
+                        <a href="" title="Facebook" target="_blank">
+                          <i class="facebookIcon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" title="Whatsapp" target="_blank">
+                          <i class="instagramIcon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" title="Twitter" target="_blank">
+                          <i class="twitterIcon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" title="Linkedin" target="_blank">
+                          <i class="linkedinIn" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a href="javascript:void(0)" class="r-f-e-btn js-share"
+                  >INVITE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d_i_c_b go_h_f">
+  <span class="l_c_d">
+    <a href="" routerLink="/dashboard/dashboard">Dashboard</a>
+  </span>
+  <div class="d_p_c_c">
+    <a href="javascript:void(0)" class="dpc btnHelppoup">
+      <p><span></span><i>HELP</i></p>
+    </a>
+  </div>
+  <span class="d_r_f_c_b">
+    <a href="" routerLink="/refer-a-friend/refer-a-friend">Refer a Friend</a>
+  </span>
+</div>
+<div class="help_popup-overlay">
+  <div class="help_popup-inner">
+    <div class="help_c_i_p">
+      <div class="help_c_c_g_b">
+        <a href="javascript:void(0);" class="help_closebtn">Close</a>
+        <div class="help_c_t_h_b">
+          <div class="help_c_t_f_n_c">
+            <div id="formContainerBox">
+              <p>Toll Free Number</p>
+              <h4><a href="tel:+91-8010994994">+91-8010994994</a></h4>
+              <div class="help_c_t_f_n_c_call_now">
+                <div class="help_call_now">
+                  <a href="tel:+91-8010994994">Call now</a> or
+                </div>
+                <div class="help_r_c_b">
+                  <a
+                    href="javascript:void(0);"
+                    class="r_f_c_b btnRed flex_c_a_c"
+                    >Request call back</a
+                  >
+                </div>
+              </div>
+              <div class="f_c_b_m">
+                <form
+                  action=""
+                  method="POST"
+                  id="requestCall"
+                  autocomplete="off"
+                >
+                  <div class="formGroup">
+                    <label>Enter your mobile number</label>
+                    <div class="f_i_c_b">
+                      <input
+                        type="tel"
+                        class="tel_g_d"
+                        name="mobile"
+                        value=""
+                        placeholder="989129XXXX"
+                        minlength="10"
+                        maxlength="10"
+                        onkeypress="return isNumberKey(event);"
+                        pattern="[1-9]{1}[0-9]{9}"
+                      />
+                    </div>
+                  </div>
+                  <div class="b_c_s">
+                    <button
+                      type="button"
+                      id="submitForm"
+                      class="btnRed flex_c_a_c"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div id="sucessesMsg">
+              <div class="sucessCon">
+                <span><i></i></span>
+                <h5>Thank You</h5>
+                <p>We will receive call back from us shortly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

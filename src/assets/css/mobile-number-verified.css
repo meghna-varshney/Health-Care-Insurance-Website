@@ -1,0 +1,326 @@
+.b_p_outer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 80px 0;
+    background: 0 0
+}
+
+.b_p_inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 30px 0 50px;
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    min-height: 400px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.b_p_grid {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%
+}
+
+.b_p_t_c {
+    padding: 15px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.verify-mobile-number {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    text-align: center
+}
+
+.verify-mobile-number h2 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0
+}
+
+.verify-mobile-number p {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #212529
+}
+
+.verify-mobile-number .code-v {
+    height: 64px;
+    width: 64px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #212529;
+    background: #fff;
+    border-radius: 0;
+    -moz-appearance: textfield;
+    margin-right: 23px;
+    outline: 0;
+    font-size: 40px;
+    font-weight: 700
+}
+
+.verify-mobile-number .code-v:nth-child(4) {
+    margin-right: 0
+}
+
+.verify-mobile-number input::-webkit-inner-spin-button,
+.verify-mobile-number input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.v-m-n {
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative
+}
+
+.verify-mobile-number .d-r-o {
+    margin-bottom: 10px
+}
+
+.r-m-v-c {
+    margin: 0;
+    font-size: 16px;
+    color: #212529;
+    text-decoration: underline;
+    font-weight: 700
+}
+
+.item-circle {
+    position: relative;
+    margin: 0 0 24px 0
+}
+
+#countup {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+#countup span.number {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center
+}
+
+#countup span.label {
+    display: block;
+    font-size: 16px;
+    line-height: 16px
+}
+
+div#s {
+    height: 42px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.progressbar-text {
+    display: inline-block;
+    position: relative;
+    left: 21px
+}
+
+#countup .part {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+#countup .part svg {
+    width: 40px!important
+}
+
+.progressbar-text .number {
+    display: inline-block!important
+}
+
+.progressbar-text .label {
+    display: inline-block!important
+}
+
+.part path:nth-child(2) {
+    stroke: red!important
+}
+
+.c_otp .v-m-n::after,
+.w_otp .v-m-n::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    background: url(../images/sprite.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px
+}
+
+.w_otp .v-m-n::after {
+    background-position: -286px -19px
+}
+
+.c_otp .v-m-n::after {
+    background-position: -210px -20px
+}
+
+.deactive .d-r-o,
+.deactive .r-m-v-c {
+    pointer-events: none;
+    opacity: .3;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.verify-mobile-number.w_otp .d-r-o,
+.verify-mobile-number.w_otp .r-m-v-c {
+    pointer-events: default;
+    opacity: 1;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.verify-mobile-number label.w_otp_msg {
+    display: none
+}
+
+.verify-mobile-number.w_otp label.w_otp_msg {
+    color: #e00004;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    display: block;
+    margin-top: 30px;
+}
+
+.d_hidden {
+    visibility: hidden
+}
+
+@media(min-width:1367px) {
+    .b_p_inner {
+        min-height: 600px
+    }
+}
+
+@media(max-width:767px) {
+    .b_p_outer {
+        padding: 0;
+        padding-top: 70px
+    }
+    .b_p_inner {
+        border-radius: 0;
+        background: 0 0;
+        min-height: 350px;
+        padding-top: 0;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+    .verify-mobile-number p {
+        margin-bottom: 50px
+    }
+    .verify-mobile-number {
+        text-align: left
+    }
+    .verify-mobile-number h2 {
+        color: #fff;
+        font-size: 26px
+    }
+    .verify-mobile-number p {
+        color: #fff;
+        font-size: 14px
+    }
+    .verify-mobile-number .code-v {
+        border: 1px solid #d8d8d8;
+        background: #e02424;
+        color: #fff
+    }
+    .progressbar-text span {
+        color: #fff!important
+    }
+    #countup .part {
+        display: block
+    }
+    .r-m-v-c {
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none
+    }
+    .part path:nth-child(2) {
+        stroke: #fff!important
+    }
+    .verify-mobile-number.w_otp label.w_otp_msg {
+        color: #fff;
+        text-align: left;
+        margin-top: 20px
+    }
+    .verify-mobile-number .code-v {
+        font-size: 30px
+    }
+    .w_otp .v-m-n::after {
+        background-position: -325px -19px
+    }
+}
+
+@media(max-width:576px) {
+    .b_p_t_c {
+        padding: 0
+    }
+}
+
+@media(max-width:420px) {
+    .verify-mobile-number .code-v {
+        height: 52px;
+        width: 52px;
+        margin-right: 15px
+    }
+    .verify-mobile-number .code-v {
+        font-size: 26px
+    }
+}
+
+@media(max-width:330px) {
+    .verify-mobile-number .code-v {
+        height: 44px;
+        width: 44px
+    }
+}
+
+@media screen and (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
+    .b_p_inner {
+        height: 550px
+    }
+}

@@ -1,0 +1,131 @@
+
+.hotel-and-office-gride li {
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600
+}
+
+.hotels-and-offices-dtls-wrap {
+    width: 100%;
+    top: 15px;
+    position: relative;
+}
+
+.hotels-and-offices-dtls-gride {
+    list-style: none;
+    margin: 0 -1.5%;
+    padding: 0
+}
+
+.hotels-and-offices-dtls-gride li {
+    /*width: 47%;*/
+   /* margin: 0 1.4%;*/
+   
+   /* margin-bottom: 40px;*/
+    display: inline-block;
+    vertical-align: top
+}
+
+.hotel-info-box {
+    position: relative
+}
+
+.hotel-image {
+    width: 255px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.hotel-image img {
+    max-width: 100%
+}
+
+.hotel-dtls {
+    width: calc(100% - 260px);
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 0 0 15px;
+    float: none;
+    margin: 0
+}
+
+.hotel-dtls .h5_heading {
+    color: #114b61;
+    padding-right: 30px
+}
+
+.hotel-dtls table tr td span a {
+    color: rgba(0, 0, 0, .8)
+}
+
+.share-component {
+    /*position: absolute;*/
+    top: 15px;
+    /*right: 15px;*/
+    z-index: 1
+}
+
+.share-toggle {
+   background:#e02424;color:#fff;text-decoration:none;text-transform:uppercase;font-size:18px;font-weight:700;padding:7px 50px;width:100%;max-width:250px;text-align:center;border-radius:30px;margin:0 auto
+   
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.share-list {
+   background-color: #f2f2f2;
+    display: none;
+    left: -60px;
+    padding: 0px 9px;
+    /* position: absolute; */
+    text-align: center;
+    top: 0;
+    /* width: 500px; */
+    z-index: 9;
+    margin-top: 20px;
+
+}
+
+.share-list:before {
+    background-color: #f2f2f2;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 91px;
+    top: 43px;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.share-list>li {
+    cursor: pointer;
+    display: block;
+    list-style: none;
+  /*  margin: 7px 0;*/
+    width: auto;
+    border: 0;
+    display: inline-block;
+    padding: 8px;
+
+}
+
+.share-list>li a {
+    color: rgba(0, 0, 0, .7);
+    font-size: 18px
+}
+
+.share-list>li a:hover {
+    color: #114b61
+}
+
+
+.openSocial .share-list {
+    display: block
+}
+
+

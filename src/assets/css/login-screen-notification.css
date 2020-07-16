@@ -1,0 +1,135 @@
+.c_container_outer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 80px 0;
+    background: 0 0
+}
+
+.c_container_inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+.c_centrt_grid {
+    max-width: 840px;
+    margin: 0 auto
+}
+
+.s_c_outer {
+    position: relative;
+    margin: 40px 0
+}
+
+.log-n-p-outer-box {
+    text-align: center
+}
+
+.log-n-p-outer-box h4 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 40px
+}
+
+.log-n-p-outer-box h3 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.log-n-p-outer-box h5 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400
+}
+
+.log-n-p-fstyle {
+    color: #e02424;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: normal
+}
+
+.log-n-p-top-image {
+    width: 100%
+}
+
+.log-n-p-top-image img {
+    width: auto;
+    max-width: 100%
+}
+
+.log-n-p-g-btn {
+    text-align: center;
+    width: 100%
+}
+
+.log-n-p-g-btn a {
+    display: inline-block;
+    min-width: 200px
+}
+
+.log-n-p-g-btn a img {
+    width: 100%
+}
+
+@media(max-width:767px) {
+    .c_container_outer {
+        padding: 0;
+        padding-top: 30px
+    }
+    .c_c_g_b,
+    .c_container_inner {
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-topright: 20px;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-bottomright: 0;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: 0 0;
+        padding: 0 15px
+    }
+    .s_c_outer {
+        margin: 25px 0
+    }
+    .log-n-p-fstyle {
+        font-size: 38px
+    }
+    .log-n-p-outer-box h3 {
+        font-size: 20px
+    }
+    .log-n-p-outer-box h5 {
+        font-size: 16px;
+        margin-top: 0;
+        color: #245a5c;
+        margin: 0
+    }
+    .log-n-p-outer-box h4 {
+        font-size: 20px;
+        color: #245a5c;
+        margin: 0
+    }
+    .log-n-p-outer-box h5 {
+        font-size: 16px;
+        color: #245a5c
+    }
+    .mob-bg-sky {
+        background: #5ce1e6
+    }
+}

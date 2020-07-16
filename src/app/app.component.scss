@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  kr-content {
+    height: calc(100vh - 200px);
+    display: block;
+  }
+}

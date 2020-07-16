@@ -1,0 +1,19 @@
+:host {
+  padding: 100px 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+
+  h1 {
+    font-size: 80px;
+    margin: 1rem 0;
+    line-height: 1;
+  }
+  p {
+    font-size: 24px;
+    margin: 1rem 0;
+    line-height: 1;
+  }
+}

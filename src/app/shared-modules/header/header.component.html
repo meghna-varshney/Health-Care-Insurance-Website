@@ -1,0 +1,142 @@
+<div class="fullcontainer headetTop">
+  <div class="rowcontainer mobAlignment">
+    <div class="fixedcontainer">
+      <header>
+        <div class="logoMain_con">
+          <span class="mob_burger_menu" #burgerMenu></span>
+          <a routerLink="/" class="sprite logo">logo</a>
+        </div>
+
+        <div
+          class="log_in_outer"
+          [ngClass]="loggedIn ? 'logout_box_outer' : 'login_box_outer'"
+        >
+          <ul class="menu" *ngIf="!loggedIn">
+            <li><a routerLink="/">Home</a></li>
+            <li>
+              <a href="" routerLink="/plans" routerLinkActive="active"
+                >Kenko Red Plans</a
+              >
+            </li>
+          </ul>
+
+          <div *ngIf="!loggedIn && !hideBtn">
+            <a routerLink="verify/login" class="loginBtn">LOGIN</a>
+          </div>
+
+          <div class="m_m_c_b">
+            <a href="javascript:void(0)" class="close_btn_m" #closeNav>Close</a>
+
+            <div class="m_m_i_c_b">
+              <div class="m_m_r_c_b" *ngIf="!loggedIn">
+                <div class="mob_usr_d login_box">
+                  <div class="userProfile">
+                    <div class="user_p_img">
+                      <div class="img_inner">
+                        <img src="assets/images/login.png" />
+                      </div>
+                    </div>
+                    <div class="user_name">
+                      <a href="mobile-number.html">Login to Kenko Red</a>
+                    </div>
+                  </div>
+                </div>
+                <ul class="menu_b_c">
+                  <li>
+                    <a href="" routerLink="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="" routerLink="/plans" routerLinkActive="active"
+                      >Kenko Red Plans</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="m_m_r_c_b" *ngIf="loggedIn">
+                <div class="mob_usr_d login_detail_box">
+                  <div class="userProfile">
+                    <div class="user_p_img">
+                      <div class="img_inner">
+                        <img src="assets/images/user.jpg" />
+                      </div>
+                    </div>
+                    <div class="user_name">
+                      <p>Red Classic Member</p>
+                      <h6>Smita Jones</h6>
+                    </div>
+                  </div>
+                </div>
+                <ul class="menu_t_c">
+                  <li>
+                    <a href="" routerLink="dashboard/dashboard">Dashboard</a>
+                  </li>
+                  <li><a href="" routerLink="plans/my-plan">My Plan</a></li>
+                  <li>
+                    <a href="" routerLink="refer-a-friend/refer-a-friend"
+                      >Refer a Friend</a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="btnHelppoup">Help</a>
+                  </li>
+                </ul>
+                <ul class="menu_b_c">
+                  <li>
+                    <a href="https://www.web.kenko-health.in" target="_blank"
+                      >About Kenko</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.web.kenko-health.in/blog"
+                      target="_blank"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.web.kenko-health.in/subscribe"
+                      target="_blank"
+                      >Subscribe</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.web.kenko-health.in/" target="_blank"
+                      >Reach Us</a
+                    >
+                  </li>
+                </ul>
+                <ul class="menu_l_c">
+                  <li><a href="">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="user_profile_container" *ngIf="loggedIn">
+            <div class="userProfile" #userProfile>
+              <div class="user_name">
+                <p>Red Classic Member</p>
+                <h6>Smita Jones</h6>
+              </div>
+              <div class="user_p_img">
+                <div class="img_inner">
+                  <img src="assets/images/user.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="logOut_con">
+              <div class="l_o_i_c">
+                <a href="javascript:void(0);">
+                  <span></span>
+                  <p>Logout</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.c_container_outer{position:relative;float:left;width:100%;padding:80px 0;background:0 0}
+.c_container_inner{position:relative;float:left;width:100%;padding:30px;background:#fff;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}
+.c_centrt_grid{max-width:840px;margin:0 auto}
+.s_c_outer{position:relative;margin:40px 0}
+.cong-n-p-outer-box{text-align:center;height:500px;width:100%}
+.wrapper{position:relative;height:100%}
+[class|=confetti]{position:absolute}
+.o_h{overflow:hidden}
+.t_y_s{display:flex;position:relative;justify-content:center;align-items:center;height:100%;flex-wrap:wrap;z-index:1}
+.t_y_i{flex:0 0 100%;max-width:100%;position:relative;text-align:center;padding:0 24px}
+.t_y_i span{display:flex;height:80px;width:80px;background:rgba(126,217,88,1);color:rgba(255,255,255,1);border:4px solid #e4e4e4;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:0 auto;justify-content:center;align-items:center}
+.t_y_i span i{display:block;width:50px;height:50px;background:url(../images/tick.svg) no-repeat center}
+.t_y_i h6{font-size:26px;color:#212529;margin:10px 0 15px 0;font-weight:600}
+.t_y_i p{font-size:18px;margin:0;padding:0;color:#212529}
+@media(max-width:767px){
+.c_container_outer{padding:0;padding-top:50px}
+.c_c_g_b,.c_container_inner{-moz-border-radius-topleft:20px;-moz-border-radius-topright:20px;-moz-border-radius-bottomleft:0;-moz-border-radius-bottomright:0;-webkit-border-top-left-radius:20px;-webkit-border-top-right-radius:20px;-webkit-border-bottom-left-radius:0;-webkit-border-bottom-right-radius:0;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-left-radius:0;border-bottom-right-radius:0;background:0 0;padding:0 15px}
+.s_c_outer{margin:25px 0}
+.t_y_i h6{color:#fff;margin:10px 0 0 0}
+.t_y_i p{color:#fff}
+.t_y_i span{background:rgba(117,100,171,1)}
+.t_y_i span{border:4px solid #fff}
+}

@@ -1,0 +1,110 @@
+<div class="mob_bg_red">
+  <div class="fullcontainer pt80">
+    <div class="rowcontainer">
+      <div class="fixedcontainer noSpacerLR">
+        <div class="b_p_outer">
+          <div class="b_p_inner">
+            <div class="b_p_grid">
+              <div class="b_p_t_c">
+                <div
+                  class="verify-mobile-number  deactive"
+                  [ngClass]="{ w_otp: otpInvalid }"
+                >
+                  <form action="" method="POST" autocomplete="off">
+                    <h2>One Time Password</h2>
+                    <p>Please enter OTP to verify your mobile number</p>
+
+                    <div class="v-m-n">
+                      <ng-otp-input
+                        #ngOtpInput
+                        (onInputChange)="onOtpChange($event)"
+                        [config]="config"
+                      ></ng-otp-input>
+                      <label *ngIf="otpInvalid" class="w_otp_msg"
+                        >Please enter valid OTP</label
+                      >
+                    </div>
+
+                    <!-- <div class="v-m -n">
+                    <input
+                      class="code-v"
+                      autofocus
+                      name="codeBox[0]"
+                      id="codeBox1"
+                      type="tel"
+                      maxlength="1"
+                    />
+                    <input
+                      class="code-v"
+                      name="codeBox[1]"
+                      id="codeBox2"
+                      type="tel"
+                      maxlength="1"
+                    />
+                    <input
+                      class="code-v"
+                      name="codeBox[2]"
+                      id="codeBox3"
+                      type="tel"
+                      maxlength="1"
+                    />
+                    <input
+                      class="code-v"
+                      name="codeBox[3]"
+                      id="codeBox4"
+                      type="tel"
+                      maxlength="1"
+                    />
+                    <label class="w_otp_msg">Please enter valid OTP</label>
+                  </div> -->
+                    <div class="item-circle">
+                      <div id="countup" [ngClass]="{ d_hidden: otpInvalid }">
+                        <div class="part">
+                          <div id="s">
+                            <svg
+                              viewBox="0 0 100 100"
+                              style="display: block; width:40px;"
+                            >
+                              <path
+                                d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                stroke="#d8d8d85c"
+                                stroke-width="7"
+                                fill-opacity="0"
+                              ></path>
+                              <path
+                                d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                class="p_l_draw"
+                                stroke="#DC242F"
+                                stroke-width="7"
+                                fill-opacity="0"
+                                style="stroke-dasharray: 292.273, 292.273;stroke-dashoffset:0"
+                              ></path>
+                            </svg>
+                            <div
+                              class="progressbar-text"
+                              style="color: rgb(220, 36, 47);"
+                            >
+                              <span class="number">30</span>
+                              <span class="label">
+                                &nbsp; seconds remaining</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="d-r-o">Didn’t receive the OTP?</p>
+                    <a href="javascript:void(0);" title="" class="r-m-v-c"
+                      >Resend</a
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

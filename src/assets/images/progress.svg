@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111.387" height="100" viewBox="0 0 111.387 100">
+  <defs>
+    <filter id="Oval_Copy" x="0" y="0" width="111.387" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#cde600" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-192 -14)">
+    <g id="usages" transform="translate(207 27)">
+      <circle id="Oval" cx="42" cy="42" r="42" fill="none" stroke="#cde600" stroke-miterlimit="10" stroke-width="6" opacity="0.198"/>
+      <g transform="matrix(1, 0, 0, 1, -15, -13)" filter="url(#Oval_Copy)">
+        <path id="Oval_Copy-2" data-name="Oval Copy" d="M80.5,25.5A41.065,41.065,0,0,0,42,0C21,0,0,18.8,0,42" transform="translate(15 13)" fill="none" stroke="#cde600" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"/>
+      </g>
+    </g>
+    <g id="numbers" transform="translate(228 51)">
+      <text id="_33_" data-name="33%" transform="translate(7 16)" fill="#cde600" font-size="16" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="0" y="0">33%</tspan></text>
+      <text id="Usage" transform="translate(0 33)" fill="#fff" font-size="16" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="0" y="0">Usage</tspan></text>
+    </g>
+  </g>
+</svg>

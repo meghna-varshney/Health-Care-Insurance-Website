@@ -1,0 +1,167 @@
+<div class="fullcontainer pt80">
+  <div class="rowcontainer">
+    <div class="fixedcontainer noSpaceLR">
+      <div class="c_container_outer">
+        <a
+          href=""
+          routerLink="/plans/post-plan-details"
+          routerLinkActive="active"
+          class="backBtnbox"
+          >Back</a
+        >
+        <div class="c_container_inner">
+          <div class="c_centrt_grid">
+            <div class="tabContainer">
+              <h1>Network doctors</h1>
+              <!-- <div class="t_i_c">
+                                <ul>
+                                    <li class="left_Tabmenu active"><a href="javascript:void(0);">Doctors</a></li>
+                                    <li class="right_Tabmenu"><a href="javascript:void(0);">Hospital</a></li>
+                                </ul>
+                            </div> -->
+
+              <!-- <div class="s_c_outer">
+                                <div class="search_container">
+                                    <form action="" method="POST">
+                                        <input type="text" name="search" autocomplete="off" placeholder="Search doctors around you" />
+                                        <span><img src="images/search.svg" /></span>
+                                    </form>
+                                </div>
+                            </div> -->
+              <div class="listingData" *ngIf="doctorCarousel.length > 0">
+                <div class="listRow">
+                  <div
+                    class="listGrid"
+                    *ngFor="let doctor of doctorCarousel"
+                    (click)="showInDialog(doctor)"
+                  >
+                    <div class="i_b_grid">
+                      <div class="innerBox popupContainer">
+                        <div class="i_i_box">
+                          <div class="c_c_c_b flex_c_a_c c1">
+                            <div class="c_c_c_i_b">
+                              <span>{{ doctor.shortname }}</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d_c_g_b">
+                          <h3>{{ doctor.doctorname }}</h3>
+                          <p>{{ doctor.speciality }}</p>
+                          <p>{{ doctor.city }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="load_more">
+                <p>
+                  To view list of all network doctors
+                  <a href="http://bit.ly/Kenko-Network">click here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup-overlay">
+  <div class="popup-inner">
+    <div class="c_i_p">
+      <div class="c_c_g_b">
+        <a href="javascript:void(0);" class="closebtn">Close</a>
+        <div class="c_t_h_b" *ngIf="selectedDoctor">
+          <div class="p_d_d_c_b">
+            <div class="p_top_con">
+              <div class="c_c_c_b flex_c_a_c c7">
+                <div class="c_c_c_i_b">
+                  <span>{{ selectedDoctor.shortname }}</span>
+                </div>
+              </div>
+              <div class="p_text_con">
+                <h3 [innerHTML]="selectedDoctor.doctorname"></h3>
+                <!--  <p>MBBS</p>  -->
+                <p>{{ selectedDoctor.address }}</p>
+              </div>
+            </div>
+            <div class="p_text_con_inner">
+              <div class="p_text_con_inner_text">
+                <h4>Experience</h4>
+                <p>{{ selectedDoctor.experince }} years</p>
+              </div>
+              <div class="p_text_con_inner_text">
+                <h4>Speciality</h4>
+                <p [innerHTML]="selectedDoctor.speciality"></p>
+              </div>
+              <div class="p_text_con_inner_text">
+                <h4>Hospital Name</h4>
+                <p [innerHTML]="selectedDoctor.hospitalname"><br /></p>
+              </div>
+            </div>
+          </div>
+          <div id="da_formContainerBox" class="f_w_c_b">
+            <p class="flex_c_a_c">
+              <span>book an appointment call Toll free Number </span>
+              <a href="tel:+91-8010994994">+91-8010994994</a>
+            </p>
+            <div class="help_c_t_f_n_c_call_now">
+              <div class="help_call_now">
+                <a href="tel:+91-8010994994">Call now</a> or
+              </div>
+              <div class="help_r_c_b">
+                <a href="javascript:void(0);" class="r_f_c_b btnRed flex_c_a_c"
+                  >Request call back</a
+                >
+              </div>
+            </div>
+            <div class="f_c_b_m">
+              <form
+                action=""
+                method="POST"
+                id="da_requestCall"
+                autocomplete="off"
+                novalidate="novalidate"
+              >
+                <div class="formGroup">
+                  <label>Enter your mobile number</label>
+                  <div class="f_i_c_b">
+                    <input
+                      type="tel"
+                      class="tel_g_d"
+                      name="da_mobile"
+                      value=""
+                      placeholder="989129XXXX"
+                      minlength="10"
+                      maxlength="10"
+                      onkeypress="return isNumberKey(event);"
+                      pattern="[1-9]{1}[0-9]{9}"
+                    />
+                  </div>
+                </div>
+                <div class="b_c_s">
+                  <button
+                    type="button"
+                    id="da_submitForm"
+                    class="btnRed flex_c_a_c"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="da_sucessesMsg">
+            <div class="sucessCon">
+              <span><i></i></span>
+              <h5>Thank You</h5>
+              <p>We will receive call back from us shortly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

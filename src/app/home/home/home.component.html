@@ -1,0 +1,42 @@
+<div class="c_t_s_c bg_white pt80">
+  <div class="fullcontainer sliderContainer pos100">
+    <div class="rowcontainer pos100">
+      <div class="fixedcontainer">
+        <owl-carousel
+          [options]="HomeCarouselConfig"
+          [items]="homeCarousel"
+          [carouselClasses]="['owl-carousel', 'owl-theme', 'sliderBanner']"
+        >
+          <div class="item" *ngFor="let item of homeCarousel">
+            <div class="sliderItem">
+              <div class="sliderImage">
+                <div class="imgCon">
+                  <img [src]="item.image" />
+                </div>
+              </div>
+              <div class="sliderContent">
+                <div class="s_i_c">
+                  <h2 [innerHTML]="item.title"></h2>
+                  <p>
+                    <span [innerHTML]="item.content"></span>
+                    <span *ngIf="item.value"
+                      ><strong
+                        >&#x20b9; {{ item.value }} {{ item.period }}</strong
+                      ></span
+                    >
+                  </p>
+                  <a
+                    [routerLink]="[item.url]"
+                    routerLinkActive="active"
+                    class="btnRed flex_c_a_c"
+                    >{{ item.action_text }}</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>
+</div>

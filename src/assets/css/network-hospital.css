@@ -1,0 +1,364 @@
+.c_container_outer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 80px 0;
+    background: 0 0
+}
+
+.c_container_inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+.c_centrt_grid {
+    max-width: 840px;
+    margin: 0 auto
+}
+
+.net-p-b p {
+    font-size: 14px
+}
+
+.net-h-co h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+
+.s_c_outer {
+    position: relative;
+    margin: 40px 0
+}
+
+.search_container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.search_container input[type=text] {
+    width: 100%;
+    position: relative;
+    height: 44px;
+    border: 1px solid #ececec;
+    border-radius: 30px;
+    outline: 0;
+    padding: 3px 55px 3px 15px;
+    font-size: 14px
+}
+
+.search_container span {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.search_container span img {
+    width: 100%;
+    max-width: 20px
+}
+
+.listingData {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.listRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.listGrid {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px
+}
+
+.i_b_grid {
+    border: 1px solid #ececec;
+    position: relative;
+    height: 100%;
+    padding: 20px 35px 20px 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+}
+
+.n-h-l {
+    width: 100%;
+    margin: 20px 0 0
+}
+
+.d-k-l {
+    text-align: left;
+    font-size: 14px
+}
+
+.d-k-d {
+    font-size: 14px
+}
+
+.n-h-l {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.d-k-d,
+.d-k-l {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%
+}
+
+.d-k-d a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #212529;
+    float: right
+}
+
+.d-k-d a:before {
+    content: "";
+    background: url(../images/shape.svg) no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    left: 0
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.innerBox {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.i_i_box_lo {
+    text-align: center;
+    border: 1px solid #d6d7d9;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto 10px
+}
+
+.i_i_box_lo img {
+    max-width: 100%;
+    width: 70px
+}
+
+.innerBox h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 23px;
+    color: #e02424;
+}
+
+.innerBox p {
+    margin: 0;
+    padding: 0
+}
+
+.d_c_g_b {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 15px;
+    text-align: left
+}
+
+.load_more {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    color: rgba(64, 64, 64, .8);
+    text-align: center;
+    padding: 25px 0 15px;
+}
+
+.load_more p {
+    margin: 0;
+    padding: 0;
+}
+
+.load_more p a,
+.load_more p a:hover,
+.load_more p a:active {
+    text-decoration: underline;
+    color: #0094FF;
+}
+
+@media(max-width:991px) {
+    .d-k-l {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    .d-k-d {
+        float: left;
+        text-align: left
+    }
+    .n-h-l {
+        display: block
+    }
+    .d-k-d a {
+        float: left
+    }
+    .net-h-co h1 {
+        font-size: 34px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .load_more {
+        font-size: 16px;
+        padding: 15px 0 35px;
+    }
+    .c_container_inner {
+        padding: 0 15px;
+        background: #f8f8f8
+    }
+    .innerBox h3 {
+        color: #e02424;
+        font-size: 18px
+    }
+    .c_container_outer {
+        padding: 0;
+        padding-top: 50px
+    }
+    .net-h-co h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        text-align: left
+    }
+    .c_c_g_b,
+    .c_container_inner {
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-topright: 20px;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-bottomright: 0;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0
+    }
+    .s_c_outer {
+        margin: 25px 0
+    }
+    .listingData {
+        padding-right: 0;
+        padding-left: 0
+    }
+    .listGrid {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px
+    }
+    .innerBox {
+        padding: 0 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+        justify-content: center;
+        align-items: flex-start
+    }
+    .d-k-l {
+        width: 100%;
+        margin-bottom: 12px
+    }
+    .d-k-d {
+        float: left;
+        width: 100%;
+        text-align: left
+    }
+    .i_b_grid {
+        background: #fff;
+        padding: 15px
+    }
+    .i_b_grid:after {
+        display: block
+    }
+    .c_i_p {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 100%
+    }
+    .i_i_box_lo {
+        margin: 8px auto 0;
+        width: 70px;
+        height: 70px
+    }
+}
