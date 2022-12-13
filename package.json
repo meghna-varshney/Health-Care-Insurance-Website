@@ -22,7 +22,7 @@
     "@angular/service-worker": "^9.0.4",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mobile-detect": "^1.4.4",
     "ng-otp-input": "^1.7.0",
     "ngx-device-detector": "^1.4.1",
